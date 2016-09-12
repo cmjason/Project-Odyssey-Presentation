@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Title -->
+				<section data-markdown>
+				    <script type="text/template">
+				        # Project Odyssey
+				
+				        An intelligent application that supports the employee journey.
+				    </script>
+				</section>
+				
+				<!-- Concept -->
+				<section data-background="#039BE5">
+					
+					<section>
+					    <h2>Concept</h2>
+					</section>
+					
+					<section>
+					    <p>Design an <span class="highlight-blue">intelligent</span> application:
+						    <ul>
+							    <li>that supports employees in their daily work and</li>
+							    <li>allow CMC to better understand the needs of employees</li>
+							    <li>so that employees have a positive experience with CMC.</li>
+						    </ul>
+					</section>
+					
+					<section>
+					    <h3>Features</h3>
+					    <ul>
+						    <li class="fragment">Welcome introduction for new employee</li>
+						    <li class="fragment">Onboarding + offboarding checklist</li>
+						    <li class="fragment">Upcoming events calendar + notification</li>
+						    <li class="fragment">Document templates</li>
+						    <li class="fragment">Submit timesheet</li>
+						    <li class="fragment">Contact directory</li>
+						    <li class="fragment">News feed</li>
+						    <li class="fragment">Mood tracker</li>
+						    <li class="fragment">Many more</li>
+					    </ul>
+					</section>
+					
+				    <section>
+						<h3>Platform</h3>
+				        <table>
+					        <tr>
+						        <th>Mobile</th>
+								<th>Browsers</th>
+					        </tr>
+					        <tr>
+						        <td>Android</td>
+						        <td>Chrome</td>
+					        </tr>
+					        <tr>
+						        <td>iOS</td>
+						        <td>Safari</td>
+					        </tr>
+				        </table>
+					</section>  
+					
+				</section>
+				
+				<!-- Approach -->
+				<section data-background="#FF5252">
+					
+					<section>
+						<h2>Approach</h2>
+					</section>
+					
+					<section>
+						<h3>Initiate</h3>
+						<p>Start internally, with CMC consultants as our <a href="#/ux">users.</a></p>
+						<ol>
+							<li>Form user group</li>
+							<li>Define list of features</li>
+							<li>Select 2 features > Develop > Design > Test</li>
+						</ol>
+					</section>
+					
+					<section>
+						<h3>Review</h3>
+						<p>Then, consider whether the application has enough features to be released internally and the market.</p>
+						<ol>
+							<li>Product viability</li>
+							<li>Usability</li>
+							<li>Market demand</li>
+						</ol>
+					</section>
+				
+				</section>
+				
+				
+				<!-- Principles -->
+				<section data-background="#607D8B">
+					
+					<section>
+						<h2>Princples</h2>
+					</section>
+					
+					<section id="ux">
+						<h2>User-centred design</h2>
+						<p>Focus on the needs and wants of the users to create an application that is easy to use.</p>
+						<ol>
+							<li>Explicit understanding of users, tasks and environment</li>
+							<li>Involve users throughout the design and development</li>
+							<li>The design addresses the whole user experience</li>
+						</ol>
+					</section>
+				
+				</section>
+			
+				<!-- End -->
+				<section>
+					<h2>End</h2>
+				</section>
+					
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			
+			Reveal.configure({ 
+				backgroundTransition: 'zoom'
+			});
+		</script>
+	</body>
+</html>
